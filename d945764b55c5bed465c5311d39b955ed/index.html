@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+
+    <div>
+      ID : <input type="text" id="id_number" />
+      <input type="button" value="GO!" onclick="getURL();" />
+    </div>
+
+
+    <script>
+      function getURL() {
+      var item_id = document.getElementById("id_number").value;
+      var strA = 'https://funko.com/cart/';
+      var strB = ':1';
+      var newURL = strA + item_id + strB;
+      window.location.href = newURL;
+      }
+    </script>
+  </body>
+</html>
