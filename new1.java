@@ -99,17 +99,15 @@ public class WebServer {
 	 *		- else, it is OK.
 	 */
 	public String get(String URL) {
-
-		//<YOUR CODE HERE>
 		for (int i = 0; i < WebServer.webpages.length; i++){
-        if (WebServer.webpages[i] == URL) 
-            return URL;
-            }
-		else if (URL == null)
-			return BAD_REQUEST;
-		else
-			return OK;
-	
+			if (WebServer.webpages[i] == URL) 
+				return URL;
+
+			else if (URL == null)
+				return BAD_REQUEST;
+			else
+				return OK;
+		}
 
 	}
 
@@ -126,7 +124,7 @@ public class WebServer {
 	 */
 	public String post(String URL) {
 
-		//<YOUR CODE HERE>
+		
 		if (URL == null)
 			return SERVER_ERROR;
 		else
