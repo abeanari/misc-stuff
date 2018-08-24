@@ -3,7 +3,10 @@ CLS
 
 :MENU
 ::CLS ::uncomment if you want to clear results
-set /P input= Type ip address or press q to EXIT: 
+echo Your IP address is:
+curl https://api.ipify.org
+echo:
+set /P input= Type IP address or press q to EXIT: 
 if %input%==q goto QUIT
 curl ipinfo.io/%input%
 echo:
