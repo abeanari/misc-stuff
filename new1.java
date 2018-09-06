@@ -77,7 +77,7 @@ public class WebServer {
 		List<String> errors = new ArrayList<String>();
 		errors.add("CODE:NAME:DESCRIPTION");
 
-		//<YOUR CODE HERE>
+		//To be completed
 		HTTPErrorCodes.
 
 		return errors;
@@ -152,7 +152,7 @@ public class WebServer {
 	 */
 	public String put(String URL, String newURL) {
 
-		//<YOUR CODE HERE>
+		//To be completed
 		if(URL == null)
 			
 		return null;
